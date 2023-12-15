@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="gallery">
+            <img src="Red.png" width="300px">
+            <!-- <div class="scroll">
+                <button class="btn active"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+            </div> -->
+        </div>
+        <div class="details">
+            <h2>Sports T-Shirt</h2>
+            <p>$50.00</p>
+            <span>30% OFF</span><br>
+            <small>A T-shirt is a style of fabric shirt named after the T
+                shape of its body and sleeves. </small>
+            <form>
+                <div class="size-select">
+                    <p>Size:</p>
+                    <label for="small">
+                        <input type="radio" name="size" id="small">
+                        <span>S</span>
+                    </label><label for="medium">
+                        <input type="radio" name="size" id="medium">
+                        <span>M</span>
+                    </label>
+                    <label for="large">
+                        <input type="radio" name="size" id="large">
+                        <span>L</span>
+                    </label>
+                    <label for="x-large">
+                        <input type="radio" name="size" id="x-large">
+                        <span>XL</span>
+                    </label>
+                    <label for="xx-large">
+                        <input type="radio" name="size" id="xx-large">
+                        <span>XXL
+                        </span>
+                    </label>
+                </div>
+                <div class="color">
+                    <p>Colour:
+                    </p>
+                    <label for="Red">
+                        <input type="radio" name="color" id="Red">
+                        <span class="Choosen-1">
+                        </span>
+                    </label>
+                    <label for="White">
+                        <input type="radio" name="color" id="White">
+                        <span class="Choosen-2">
+                        </span>
+                    </label>
+                    <label for="Black">
+                        <input type="radio" name="color" id="Black">
+                        <span class="Choosen-3">
+                        </span>
+                    </label>
+                    <label for="Grey">
+                        <input type="radio" name="color" id="Grey">
+                        <span class="Choosen-4">
+                        </span>
+                    </label>
+                </div>
+                <div class="quantity">
+                    <small>Quantity:</small>
+                    <input type="number" value="1">
+                </div>
+                <div class="btn1">
+                    <button id="buy">Shop now
+                        </buttoni>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let colorInputs = document.querySelectorAll('input[name="color"]');
+            let tshirtImg = document.querySelector(".gallery img");
+
+            function changeImage(event) {
+                let color = event.target.id;
+                tshirtImg.src = color + ".png";
+            }
+
+            colorInputs.forEach(function (input) {
+                input.addEventListener("click", changeImage);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

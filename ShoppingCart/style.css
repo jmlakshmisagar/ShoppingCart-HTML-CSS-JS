@@ -1,0 +1,239 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(216, 216, 216);
+}
+.page{
+    width: auto;
+    height: auto;
+    background: rgb(177, 176, 176);
+    border-radius: 25px;
+    box-shadow: 0px 3px 2px #00000055;
+    display: flex;
+    margin: 250px;
+
+
+}
+.gallery{
+    height: 400px;
+    padding: 20px;
+    background: grey;
+    z-index: 2;
+    margin: 40px 0px 40px 40px ;
+    border-radius : 20px;
+    box-shadow: 0px 3px 6px #00000055;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    color: white;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80px;
+}
+.btn:hover{
+    border: 1px solid black;
+    scale: 0.9;
+    background-color: black;
+}
+.active{
+    background-color: black;
+    scale: 0.9;
+    color: white;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.details{
+    padding: 30px 20px 30px 20px ;
+    background-color: rgb(199, 199, 199);
+    margin: 70px 30px 70px 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 1;
+    height: 320px;
+    font-family: 'Courier New', monospace;
+    width: 250px;
+
+}
+.size-select p{
+    margin-right: 20px;
+    height: 20px;
+}
+.size-select label input:checked + span{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.details h2{
+    margin: 0;
+    font-size: 28px;
+}
+.details h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.details p{
+    font-weight: 550;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.details span{
+    color: rgb(221, 9, 9);
+    font-weight: 550;
+    
+}
+.details small{
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.size-select label input {
+    color: black;
+    visibility: hidden;
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+}
+.size-select p{
+    font-size: 15px;
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 0px 0px ;
+}
+.color{ 
+    display: flex;
+    align-items: center;
+
+}
+.color p{
+    font-size: 15px;
+}
+.color label span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px 10px;
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+
+}
+.Choosen-1{
+    background-color: Red;
+}
+.Choosen-2{
+    background-color: white;
+}
+.Choosen-3{
+    background-color: black;
+}
+.Choosen-4{
+    background-color: grey;
+}
+.color label input:checked + span{
+    cursor: pointer;
+    scale: 0.9;
+    border: 2px solid black;
+}
+.color label input{
+    visibility: hidden;
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.color label {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+}
+.quantity{
+    display: flex;
+    font-size: 1px;
+    align-items: center;
+    
+}
+.quantity small{
+    font-size: 15px;
+    font-weight: 550;
+    margin: 5px 0px;
+}
+.quantity input{
+    width: 50px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 550;
+    cursor: pointer;
+}
+.btn1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+#buy{
+    width: 120px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(52, 49, 49);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .page{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+    .gallery{
+        margin: 30px 30px 0px 30px;
+        height: 300px;
+        width: 300px;
+    }
+    .gallery img{
+        width: 290px;
+    }
+    .details{
+        margin: 0px 50px 30px 50px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
